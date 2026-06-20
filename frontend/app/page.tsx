@@ -26,8 +26,8 @@ export default function FlowGuardDashboard() {
     const fetchData = async () => {
       try {
         const [hotzonesRes, routeRes] = await Promise.all([
-          fetch("http://127.0.0.1:8000/api/hotzones"),
-          fetch("http://127.0.0.1:8000/api/routes")
+          fetch("https://flowguard-2axw.onrender.com/api/hotzones"),
+          fetch("https://flowguard-2axw.onrender.com/api/routes")
         ]);
 
         const hotzonesData = await hotzonesRes.json();
